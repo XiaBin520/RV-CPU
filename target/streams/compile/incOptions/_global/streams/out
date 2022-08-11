@@ -1,5 +1,18 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transfer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	core$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	core$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	core_io.class[0m

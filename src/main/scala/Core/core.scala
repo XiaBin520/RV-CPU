@@ -10,9 +10,6 @@ class core_io extends Bundle{
   val inst_addr = Output(UInt(32.W))
   val inst      = Input(UInt(32.W))
 
-  val ctrl_flush = Input(UInt(5.W))
-  val ctrl_hold  = Input(UInt(5.W))
-
   val rmem_en   = Output(Bool())
   val rmem_sel  = Output(UInt(3.W))
   val rmem_addr = Output(UInt(32.W))
@@ -22,6 +19,19 @@ class core_io extends Bundle{
   val wmem_sel  = Output(UInt(2.W))
   val wmem_addr = Output(UInt(32.W))
   val wmem_data = Output(UInt(64.W))
+
+  val ctrl_flush = Input(UInt(5.W))
+  val ctrl_hold  = Input(UInt(5.W))
+
+  val dec_rs1     = Output(UInt(5.W))
+  val dec_rs2     = Output(UInt(5.W))
+  val dec_rs1_en  = Output(Bool())
+  val dec_rs2_en  = Output(Bool())
+  val exe_wreg_en = Output(Bool())
+  val exe_rd      = Output(UInt(5.W))
+  val mem_wreg_en = Output(Bool())
+  val mem_rd      = Output(UInt(5.W))
+  val jmp_en      = Output(Bool())
 }
 
 
@@ -118,6 +128,7 @@ class core extends Module{
   io.inst_addr := if_reg_pc
 
 
+
   //**********************************
   // Instruction Decode Stage
   when(io.ctrl_flush(3))
@@ -145,6 +156,12 @@ class core extends Module{
   Transfer.io.imm      := ImmSext.io.imm(31, 0)
   Transfer.io.pc       := dec_reg_pc
   
+
+  io.dec_rs1    := dec_reg_inst(19, 15)
+  io.dec_rs2    := dec_reg_inst(24, 20)
+  io.dec_rs1_en := Decoder.io.rs1_en
+  io.dec_rs2_en := Decoder.io.rs2_en
+  io.jmp_en     := Transfer.io.jmp_en
 
 
   //**********************************
@@ -188,6 +205,11 @@ class core extends Module{
   CMP_Module.io.data2   := exe_reg_data2
 
 
+  io.exe_wreg_en := exe_reg_ctrl_wreg_en
+  io.exe_rd      := exe_reg_ctrl_rd
+
+
+
   //**********************************
   // Memory Stage
   when(io.ctrl_flush(1))
@@ -216,6 +238,9 @@ class core extends Module{
   io.wmem_sel  := mem_reg_ctrl_wmem_sel
   io.wmem_addr := mem_reg_alu_data
   io.wmem_data := mem_reg_rs2_data
+
+  io.mem_wreg_en := mem_reg_ctrl_wreg_en
+  io.mem_rd      := mem_reg_ctrl_rd
 
 
 

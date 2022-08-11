@@ -93,6 +93,11 @@ object Parameters{
   val   RS2_MEM     =   1.U(2.W)
   val   RS2_WB      =   2.U(2.W)
 
+  val   SIZE_1B     =   0.U(2.W)
+  val   SIZE_2B     =   1.U(2.W)
+  val   SIZE_4B     =   2.U(2.W)
+  val   SIZE_8B     =   3.U(2.W)
+
   val   RESET_ADDR  =   "h80000000".U(32.W)
   val   NOP_INST    =   "h0013".U(32.W)
 }

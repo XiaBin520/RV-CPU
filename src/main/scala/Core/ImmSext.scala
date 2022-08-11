@@ -26,10 +26,3 @@ class ImmSext extends RawModule {
                 (imm_op === IMM_JTYPE) -> Cat(Fill(64-21, imm31To7(31-7)), imm31To7(31-7), imm31To7(19-7, 12-7), imm31To7(20-7), imm31To7(30-7, 21-7), 0.U(1.W))
             ))
 }
-
-
-
-
-object ImmSext extends App{
-  (new chisel3.stage.ChiselStage).emitVerilog(new ImmSext())
-}

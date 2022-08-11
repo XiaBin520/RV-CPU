@@ -40,9 +40,3 @@ class transfer extends RawModule{
                 ))
   io.jmp_en := Mux((pc_type === PC_BRJMP || pc_type === PC_JAL || pc_type === PC_JALR), true.B, false.B)
 }
-
-
-
-object transfer extends App{
-  (new chisel3.stage.ChiselStage).emitVerilog(new transfer())
-}

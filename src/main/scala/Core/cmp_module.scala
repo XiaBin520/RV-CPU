@@ -90,7 +90,3 @@ class cmp_module extends Module{
 }
 
 
-
-object cmp_module extends App{
-  (new chisel3.stage.ChiselStage).emitVerilog(new cmp_module())
-}

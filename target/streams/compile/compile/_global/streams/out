@@ -1,22 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/core.scala:91:27: value io is not a member of object RVCore.transfer[0m
-[0m[[0m[31merror[0m] [0m[0m    if_reg_pc := transfer.io.pc_next[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/core.scala:138:24: not found: value op1_sel[0m
-[0m[[0m[31merror[0m] [0m[0m                      (op1_sel === OP1_RS1)  -> RegFile.io.rs1_data,[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/core.scala:139:24: not found: value op1_sel[0m
-[0m[[0m[31merror[0m] [0m[0m                      (op1_sel === OP1_PC)   -> if_reg_pc,[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/core.scala:140:24: not found: value op1_sel[0m
-[0m[[0m[31merror[0m] [0m[0m                      (op1_sel === OP1_ZERO) -> 0.U[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/core.scala:144:24: not found: value op2_sel[0m
-[0m[[0m[31merror[0m] [0m[0m                      (op2_sel === OP2_RS2)  -> RegFile.io.rs2_data,[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/core.scala:145:24: not found: value op2_sel[0m
-[0m[[0m[31merror[0m] [0m[0m                      (op2_sel === OP2_IMM)  -> ImmSext.io.imm,[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/core.scala:146:24: not found: value op2_sel[0m
-[0m[[0m[31merror[0m] [0m[0m                      (op2_sel === OP2_FOUR) -> 4.U[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/InstRead.scala:50:17: not found: value mem_rinst_data[0m
+[0m[[0m[31merror[0m] [0m[0m    reg_inst := mem_rinst_data[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -99,8 +99,3 @@ class Decoder extends RawModule{
       io.rs1_en     :=    rs1_en
       io.rs2_en     :=    rs2_en
 }
-
-
-object Decoder extends App{
-  (new chisel3.stage.ChiselStage).emitVerilog(new Decoder())
-}
