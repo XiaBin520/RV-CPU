@@ -6,8 +6,9 @@
 #include<verilated_vcd_c.h>
 
 
-#include "VCPU.h"
-#include "VCPU___024root.h"
+#include "Vtest.h"
+#include "Vtest___024root.h"
+#include "Vtest__Dpi.h"
 
 
 typedef int                     int32;
@@ -15,10 +16,17 @@ typedef unsigned int            uint32;
 typedef long long int           int64;
 typedef unsigned long long int  uint64;
 
+long long int value = 0;
+
+void reg_value(int a, long long int b){
+  value = b;
+  printf("==%d===%llx\n", a, b);
+}
+
 
 
 int main(){
-    VCPU *dut = new VCPU;
+    Vtest *dut = new Vtest;
 
     Verilated :: traceEverOn(true);
     VerilatedVcdC *m_trace = new VerilatedVcdC;
@@ -26,14 +34,25 @@ int main(){
     m_trace->open("waveform.vcd");
 
 
-    for(uint32 i = 0; i < 100; i++){
-      dut->io_mem_rinst_valid = (i == 23 || i == 24 || i == 43 || i == 44) ? 1 : 0;
+    dut->io_wen = 1;
+    dut->io_waddr = 3;
+    dut->io_wdata = 0x33333333;
+    dut->clock = 0;
+    dut->eval();
+    printf("C--test: %llx\n\n", value);
 
-      dut->reset = (i < 7) ? 1 : 0;
-      dut->clock ^= 1;
-      dut->eval();
-      m_trace->dump(i);
-    }
+    dut->clock = 1;
+    dut->eval();
+    printf("C--test: %llx\n\n", value);
+
+
+
+
+    // for(uint32 i = 0; i < 20; i++){
+    //   dut->clock ^= 1;
+    //   dut->eval();
+    //   m_trace->dump(i);
+    // }
 
     
     m_trace->close();

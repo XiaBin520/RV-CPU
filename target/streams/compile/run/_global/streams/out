@@ -1,7 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mchisel3.internal.ChiselException: Connection between left (CPU.io: IO[core_io]) and source (coreCtrl.io.Mem: IO[coreCtrl_Mem_io]) failed @.mem_wmem_valid: Left Record missing field (mem_wmem_valid).[0m
+[0m[[0m[31merror[0m] [0m[0mchisel3.internal.ChiselException: Connection between sink (testBox.reg_data: IO[UInt<64>[32]]) and source (test.reg_file: Reg[UInt<64>[8]]) failed @: Sink and Source are different length Vecs.[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
-[0m[[0m[31merror[0m] [0m[0m	at RVCore.CPU.<init>(CPU.scala:14)[0m
-[0m[[0m[31merror[0m] [0m[0m	at RVCore.CPU$.$anonfun$new$3(CPU.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m	at test.<init>(test.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at test$.$anonfun$new$5(test.scala:57)[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) chisel3.internal.ChiselException: Connection between left (CPU.io: IO[core_io]) and source (coreCtrl.io.Mem: IO[coreCtrl_Mem_io]) failed @.mem_wmem_valid: Left Record missing field (mem_wmem_valid).[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) chisel3.internal.ChiselException: Connection between sink (testBox.reg_data: IO[UInt<64>[32]]) and source (test.reg_file: Reg[UInt<64>[8]]) failed @: Sink and Source are different length Vecs.[0m

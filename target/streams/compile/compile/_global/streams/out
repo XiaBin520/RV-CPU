@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/test.scala:32:20: not enough arguments for constructor testBox: (n: Int)testBox.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter n.[0m
-[0m[[0m[31merror[0m] [0m[0m  val Add = Module(new testBox)[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/test.scala:49:7: value clock is not a member of testBox[0m
+[0m[[0m[31merror[0m] [0m[0m  Box.clock := clock[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

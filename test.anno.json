@@ -1,0 +1,23 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxInlineAnno",
+    "target":"test.testBox",
+    "name":"testBox.v",
+    "text":"\nimport \"DPI-C\" function void reg_value(input int a, input longint b);\n\nmodule testBox(\n input [63:0] reg_data [0:31],\n);\n always @(*) begin\n   interger = i;\n   for(i = 0; i < 32; i = i + 1) begin\n     reg_value(i, reg_data[i]);\n   end\n end\nendmodule\n  "
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~test|test>io_rdata",
+    "sources":[
+      "~test|test>io_waddr"
+    ]
+  }
+]

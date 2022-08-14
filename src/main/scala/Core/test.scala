@@ -1,44 +1,63 @@
 import chisel3._
 import chisel3.util._
 
-class testBox(n: Int) extends BlackBox with HasBlackBoxInline{
+
+
+class testBox extends BlackBox with HasBlackBoxInline{
   val io = IO(new Bundle{
-    val x = Input(UInt(n.W))
-    val y = Input(UInt(n.W))
-    val z = Output(UInt(n.W))
+    val reg_data = Input(Vec(32, UInt(64.W)))
   })
 
-  setInline("testAdd.v", 
-  """module testAdd(
-    | input [${n-1}:0] x,
-    | input [${n-1}:0] y,
-    | input [${n-1}:0] z
-    | );
+  setInline("testBox.v", 
+  """
+    |import "DPI-C" function void reg_value(input int a, input longint b);
     |
-    | assign z = x + y;
-    | 
-    | endmodule
+    |module testBox(
+    | input [63:0] reg_data [0:31],
+    |);
+    | always @(*) begin
+    |   interger = i;
+    |   for(i = 0; i < 32; i = i + 1) begin
+    |     reg_value(i, reg_data[i]);
+    |   end
+    | end
+    |endmodule
   """.stripMargin)
 }
 
 
+
+
+
+
 class test extends Module{
   val io = IO(new Bundle{
-    val a = Input(UInt(64.W))
-    val b = Input(UInt(64.W))
-    val c = Output(UInt(64.W))
+    val wen   = Input(Bool())
+    val waddr = Input(UInt(5.W))
+    val wdata = Input(UInt(64.W))
+    val rdata = Output(UInt(64.W))
   })
-  val reg_add = RegInit(0.U(64.W))
-  val Add = Module(new testBox(64))
-  Add.io.x := io.a
-  Add.io.y := io.b
-  reg_add := Add.io.z
-  io.c := reg_add
+
+
+  val reg_file = RegInit( VecInit( Seq.fill(32)(0.U(64.W)) ) )
+  when(io.wen)
+  {
+    reg_file(io.waddr) := io.wdata
+  }
+
+  io.rdata := reg_file(io.waddr)
+
+
+  val Box = Module(new testBox())
+  Box.io.reg_data := reg_file
 }
+
+
+
+
+
 
 
 object test extends App{
   (new chisel3.stage.ChiselStage).emitVerilog(new test())
 }
-
-
