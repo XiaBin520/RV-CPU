@@ -1,1 +1,1 @@
-[[{},{}],{}]
+[[{"${BASE}/src/main/resources/testAdd.v":["${BASE}/target/scala-2.12/classes/testAdd.v"]},{"${BASE}/target/scala-2.12/classes/testAdd.v":["${BASE}/src/main/resources/testAdd.v"]}],{"${BASE}/src/main/resources/testAdd.v":{"file":"file:///home/xiabin/workstation/CPU-Core/RV-CPU/src/main/resources/testAdd.v","lastModified":1660362126091}}]

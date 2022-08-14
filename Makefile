@@ -3,4 +3,4 @@ run:
 	sbt run
 
 clean:
-	rm *.v *.fir *.json
+	-rm *.v *.fir *.json

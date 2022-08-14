@@ -1,1 +1,1 @@
-["RVCore.RegFile","RVCore.core","RVCore.coreCtrl","test"]
+["RVCore.CPU","RVCore.RegFile","RVCore.core","RVCore.coreCtrl","test"]

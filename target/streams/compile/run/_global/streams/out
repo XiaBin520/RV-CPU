@@ -1,40 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.PassExceptions: [0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.core_wmem_sel <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.ctrl_wmem_start <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 43:21] : [module coreCtrl]  Reference RInst is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RInst.io.core_rinst_addr <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 44:21] : [module coreCtrl]  Reference RMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RMem.io.ctrl_rmem_start <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 43:21] : [module coreCtrl]  Reference RInst is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RInst.io.ctrl_rinst_start <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.core_wmem_addr <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 44:21] : [module coreCtrl]  Reference RMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RMem.io.core_rmem_sel <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.core_wmem_data <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 44:21] : [module coreCtrl]  Reference RMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RMem.io.core_rmem_addr <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.PassException: 9 errors detected![0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) firrtl.passes.PassExceptions: [0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.core_wmem_sel <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.ctrl_wmem_start <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 43:21] : [module coreCtrl]  Reference RInst is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RInst.io.core_rinst_addr <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 44:21] : [module coreCtrl]  Reference RMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RMem.io.ctrl_rmem_start <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 43:21] : [module coreCtrl]  Reference RInst is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RInst.io.ctrl_rinst_start <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.core_wmem_addr <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 44:21] : [module coreCtrl]  Reference RMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RMem.io.core_rmem_sel <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 45:21] : [module coreCtrl]  Reference WMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : WMem.io.core_wmem_data <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[coreCtrl.scala 44:21] : [module coreCtrl]  Reference RMem is not fully initialized.[0m
-[0m[[0m[31merror[0m] [0m[0m   : RMem.io.core_rmem_addr <= VOID[0m
-[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.PassException: 9 errors detected![0m
+[0m[[0m[31merror[0m] [0m[0mchisel3.internal.ChiselException: Connection between left (CPU.io: IO[core_io]) and source (coreCtrl.io.Mem: IO[coreCtrl_Mem_io]) failed @.mem_wmem_valid: Left Record missing field (mem_wmem_valid).[0m
+[0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
+[0m[[0m[31merror[0m] [0m[0m	at RVCore.CPU.<init>(CPU.scala:14)[0m
+[0m[[0m[31merror[0m] [0m[0m	at RVCore.CPU$.$anonfun$new$3(CPU.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
+[0m[[0m[31merror[0m] [0m[0m	at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) chisel3.internal.ChiselException: Connection between left (CPU.io: IO[core_io]) and source (coreCtrl.io.Mem: IO[coreCtrl_Mem_io]) failed @.mem_wmem_valid: Left Record missing field (mem_wmem_valid).[0m

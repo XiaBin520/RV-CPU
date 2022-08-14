@@ -1,5 +1,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/rv-cpu_2.12-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	testAdd.v[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/testAdd.v[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/coreCtrl_Mem_io.class[0m
@@ -18,6 +20,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/transfer.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/StateFSM.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/StateFSM.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RVCore/CPU$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/CPU$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/DataRead$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/DataRead$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/RegFile$delayedInit$body.class[0m
@@ -48,6 +52,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/coreCtrl.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/Instructions$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/Instructions$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RVCore/CPU.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/CPU.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/core_io.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/core_io.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/coreCtrl_io.class[0m
@@ -66,6 +72,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/Check$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/RegFile$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/RegFile$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RVCore/CPU$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/CPU$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/core.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/core.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/InstRead.class[0m
@@ -80,12 +88,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/cmp_module.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RVCore/Check.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/RVCore/Check.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	test$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/test$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	testBox$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/testBox$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	test$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/test$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	test.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/test.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	testBox.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/testBox.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	test$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/test$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	test$$anon$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/xiabin/workstation/CPU-Core/RV-CPU/target/scala-2.12/classes/test$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

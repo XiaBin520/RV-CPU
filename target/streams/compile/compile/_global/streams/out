@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/InstRead.scala:50:17: not found: value mem_rinst_data[0m
-[0m[[0m[31merror[0m] [0m[0m    reg_inst := mem_rinst_data[0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-CPU/src/main/scala/Core/test.scala:32:20: not enough arguments for constructor testBox: (n: Int)testBox.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter n.[0m
+[0m[[0m[31merror[0m] [0m[0m  val Add = Module(new testBox)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
